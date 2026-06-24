@@ -10,6 +10,8 @@
 [data-theme="dark"] {
   --bg-page: #0d0d0f;
   --bg-page-alt: #0a0a0c;
+  --bg-section-page: rgba(13, 13, 15, 0.65);
+  --bg-section-alt: rgba(10, 10, 12, 0.7);
   --bg-footer: #09090b;
   --bg-card: #141418;
   --bg-elevated: #16161a;
@@ -65,6 +67,8 @@
 [data-theme="light"] {
   --bg-page: #ffffff;
   --bg-page-alt: #f8fafc;
+  --bg-section-page: rgba(255, 255, 255, 0.75);
+  --bg-section-alt: rgba(248, 250, 252, 0.75);
   --bg-footer: #f1f5f9;
   --bg-card: #ffffff;
   --bg-elevated: #f8fafc;

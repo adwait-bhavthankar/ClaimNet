@@ -47,44 +47,8 @@ function Layout({ children }) {
       {/* Background Interactive Particles */}
       <Particles />
 
-      {/* Top Telemetry Bar */}
-      <div className="py-2 z-50 text-[10px] font-bold uppercase tracking-widest" style={{ backgroundColor: 'var(--bg-page-alt)', color: 'var(--text-faint)' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <div className="flex items-center space-x-4">
-            <span className="flex items-center gap-1.5">
-              <Server className="w-3.5 h-3.5" style={{ color: 'var(--text-ghost)' }} />
-              <span>Inference Core: <span style={{ color: 'var(--text-primary)' }}>RandomForest v2.1</span></span>
-            </span>
-            <span className="hidden sm:inline" style={{ color: 'var(--text-ghost)' }}>|</span>
-            <span className="hidden sm:flex items-center gap-1.5">
-              <Cpu className="w-3.5 h-3.5" style={{ color: 'var(--text-ghost)' }} />
-              <span>Validation: <span style={{ color: 'var(--text-tertiary)' }}>OOB (99.5%)</span></span>
-            </span>
-          </div>
-          <div className="flex items-center space-x-4">
-            <span className="flex items-center gap-1.5">
-              <Activity className="w-3.5 h-3.5" style={{ color: 'var(--text-ghost)' }} />
-              <span>API: </span>
-              {apiStatus === 'online' ? (
-                <span className="text-emerald-400 flex items-center gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  Online
-                </span>
-              ) : apiStatus === 'offline' ? (
-                <span className="text-rose-400 flex items-center gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-                  Offline
-                </span>
-              ) : (
-                <span className="text-amber-400">Checking...</span>
-              )}
-            </span>
-          </div>
-        </div>
-      </div>
-
       {/* Main Navbar */}
-      <nav className={`fixed top-8 left-0 right-0 z-40 transition-all duration-200 ${
+      <nav className={`fixed top-3 left-0 right-0 z-40 transition-all duration-200 ${
         isScrolled ? 'mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 mt-2' : 'w-full px-4 sm:px-6 lg:px-8'
       }`}>
         <div className={`transition-all duration-200 rounded-xl sm:rounded-2xl ${
@@ -174,7 +138,7 @@ function Layout({ children }) {
       </nav>
 
       {/* Main Content */}
-      <main className="pt-24 sm:pt-28 flex-grow">{children}</main>
+      <main className="pt-20 sm:pt-24 flex-grow">{children}</main>
 
       {/* Footer */}
       <footer className="py-12 mt-auto" style={{ backgroundColor: 'var(--bg-footer)', borderTop: `1px solid var(--border-section)` }}>

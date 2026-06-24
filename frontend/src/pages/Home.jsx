@@ -59,12 +59,12 @@ function Home() {
       className="min-h-screen relative overflow-hidden">
 
       {/* Hero */}
-      <section className="relative pt-12 pb-20 lg:pt-20 lg:pb-32">
+      <section className="relative pt-6 pb-12 lg:pt-8 lg:pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 
             <motion.div variants={itemVariants} className="lg:col-span-7 text-left z-10">
-              <div className="inline-flex items-center space-x-2.5 px-4 py-2 rounded-full mb-8"
+              <div className="inline-flex items-center space-x-2.5 px-4 py-2 rounded-full mb-4"
                 style={{ backgroundColor: 'var(--bg-subtle)', border: '1px solid var(--border-accent)' }}>
                 <Sparkles className="w-4 h-4" style={{ color: 'var(--text-primary)' }} />
                 <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--text-tertiary)' }}>
@@ -72,7 +72,7 @@ function Home() {
                 </span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold leading-none mb-6 tracking-tight"
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold leading-none mb-4 tracking-tight"
                 style={{ color: 'var(--text-primary)' }}>
                 ClaimNet: End-to-End <br />
                 <span className="bg-clip-text text-transparent" style={{ backgroundImage: 'linear-gradient(to right, var(--text-primary), var(--text-muted))' }}>
@@ -80,7 +80,7 @@ function Home() {
                 </span>
               </h1>
 
-              <p className="text-base sm:text-lg mb-8 leading-relaxed max-w-xl" style={{ color: 'var(--text-muted)' }}>
+              <p className="text-base sm:text-lg mb-5 leading-relaxed max-w-xl" style={{ color: 'var(--text-muted)' }}>
                 An industrial-grade insurance claim decision support system. Utilizing a fully serialized
                 scikit-learn pipeline, ClaimNet automates feature engineering, data imputation, and
                 prediction with zero training-inference skew.
@@ -100,8 +100,8 @@ function Home() {
                 </Link>
               </div>
 
-              <div className="mt-12 pt-8" style={{ borderTop: '1px solid var(--border)' }}>
-                <p className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: 'var(--text-faint)' }}>Core Technology Stack</p>
+              <div className="mt-6 pt-5" style={{ borderTop: '1px solid var(--border)' }}>
+                <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: 'var(--text-faint)' }}>Core Technology Stack</p>
                 <div className="flex flex-wrap gap-2">
                   {techStack.map((tech) => (
                     <span key={tech.name} className="px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5"
@@ -116,8 +116,8 @@ function Home() {
 
             {/* Right Visual */}
             <motion.div variants={itemVariants} className="lg:col-span-5 relative">
-              <div className="w-full relative glass-panel rounded-2xl p-6 sm:p-8 shadow-2xl z-10 transition-transform duration-300 hover:scale-[1.01]">
-                <div className="flex items-center justify-between mb-8 pb-4" style={{ borderBottom: '1px solid var(--border)' }}>
+              <div className="w-full relative glass-panel rounded-2xl p-5 sm:p-6 shadow-2xl z-10 transition-transform duration-300 hover:scale-[1.01]">
+                <div className="flex items-center justify-between mb-5 pb-3" style={{ borderBottom: '1px solid var(--border)' }}>
                   <div className="flex items-center space-x-3">
                     <div className="w-3.5 h-3.5 rounded-full bg-green-500/20 flex items-center justify-center">
                       <span className="w-2 h-2 rounded-full bg-green-400" />
@@ -130,7 +130,7 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="space-y-6">
+                <div className="space-y-4">
                   <div>
                     <div className="flex justify-between text-xs font-semibold mb-2">
                       <span style={{ color: 'var(--text-muted)' }}>Model Stability (OOB Score)</span>

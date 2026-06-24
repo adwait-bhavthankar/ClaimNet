@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Shield, Menu, X, Cpu, Server, Activity, Sun, Moon } from 'lucide-react'
 import { useTheme } from '../context/ThemeContext'
+import CookieBanner from './CookieBanner'
+import ChatBot from './ChatBot'
 
 const API_URL = 'http://localhost:5000'
 
@@ -210,6 +212,11 @@ function Layout({ children }) {
                 <li>Classifier Model: RandomForest</li>
                 <li>OOB Accuracy: 99.5%</li>
                 <li style={{ color: 'var(--text-primary)' }}>Telemetry: Online</li>
+                <li>
+                  <Link to="/privacy" className="hover:opacity-80 transition-opacity underline decoration-dotted" style={{ color: 'var(--text-muted)' }}>
+                    Privacy Policy
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -218,7 +225,12 @@ function Layout({ children }) {
           </div>
         </div>
       </footer>
+      
+      {/* Dynamic Popups & Utilities */}
+      <CookieBanner />
+      <ChatBot />
     </div>
+
   )
 }
 

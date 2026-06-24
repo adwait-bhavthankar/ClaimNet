@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Predict from './pages/Predict'
 import Dashboard from './pages/Dashboard'
 import About from './pages/About'
+import Privacy from './pages/Privacy'
 
 function App() {
   return (
@@ -14,9 +15,11 @@ function App() {
         <Route path="/predict" element={<Predict />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/about" element={<About />} />
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
     </Layout>
   )
 }
 
 export default App
+

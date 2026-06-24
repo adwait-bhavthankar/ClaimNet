@@ -171,7 +171,7 @@ function Home() {
       </section>
 
       {/* Stats */}
-      <motion.section variants={itemVariants} className="py-16" style={{ backgroundColor: 'var(--bg-page-alt)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
+      <motion.section variants={itemVariants} className="py-16" style={{ backgroundColor: 'transparent', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {stats.map((stat) => (
@@ -188,7 +188,7 @@ function Home() {
       </motion.section>
 
       {/* Features */}
-      <section className="py-24" style={{ backgroundColor: 'var(--bg-page)' }}>
+      <section className="py-24" style={{ backgroundColor: 'transparent' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto mb-20">
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full mb-4"
@@ -208,7 +208,7 @@ function Home() {
             {features.map((feature) => (
               <motion.div key={feature.title} variants={itemVariants}
                 className="rounded-2xl p-6 sm:p-8 hover:-translate-y-0.5 hover:shadow-xl transition-all duration-300"
-                style={{ backgroundColor: 'var(--bg-subtle)', border: '1px solid var(--border)' }}>
+                style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-6"
                   style={{ backgroundColor: 'var(--bg-input)', border: '1px solid var(--border)' }}>
                   <feature.icon className="w-6 h-6" style={{ color: 'var(--text-primary)' }} />
@@ -222,7 +222,7 @@ function Home() {
       </section>
 
       {/* CTA */}
-      <motion.section variants={itemVariants} className="py-24 relative" style={{ backgroundColor: 'var(--bg-page-alt)', borderTop: '1px solid var(--border)' }}>
+      <motion.section variants={itemVariants} className="py-24 relative" style={{ backgroundColor: 'transparent', borderTop: '1px solid var(--border)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-3xl lg:text-5xl font-display font-extrabold tracking-tight mb-6" style={{ color: 'var(--text-primary)' }}>
             Experience Real-Time <span className="bg-clip-text text-transparent" style={{ backgroundImage: 'linear-gradient(to right, var(--text-primary), var(--text-muted))' }}>Claims Decisioning</span>

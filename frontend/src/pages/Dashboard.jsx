@@ -79,7 +79,7 @@ function Dashboard() {
 
   return (
     <motion.div initial="hidden" animate="visible" variants={pageVariants}
-      className="min-h-screen py-8 lg:py-12 cyber-grid relative" style={{ backgroundColor: v('bg-page') }}>
+      className="min-h-screen py-8 lg:py-12 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Header */}

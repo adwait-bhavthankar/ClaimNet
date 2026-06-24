@@ -56,7 +56,7 @@ const itemVariants = {
 function Home() {
   return (
     <motion.div initial="hidden" animate="visible" variants={containerVariants}
-      className="min-h-screen relative overflow-hidden cyber-grid" style={{ backgroundColor: 'var(--bg-page)' }}>
+      className="min-h-screen relative overflow-hidden">
 
       {/* Hero */}
       <section className="relative pt-12 pb-20 lg:pt-20 lg:pb-32">

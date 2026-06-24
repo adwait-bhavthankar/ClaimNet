@@ -52,8 +52,7 @@ function About() {
       initial="hidden"
       animate="visible"
       variants={pageVariants}
-      className="min-h-screen py-8 lg:py-12 cyber-grid relative"
-      style={{ backgroundColor: 'var(--bg-page)' }}
+      className="min-h-screen py-8 lg:py-12 relative"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
@@ -77,7 +76,7 @@ function About() {
 
         {/* Project Overview Card */}
         <div className="glass-panel rounded-2xl p-6 sm:p-8 mb-10 transition-all duration-300 shadow-sm"
-          style={{ backgroundColor: 'var(--bg-subtle)', border: '1px solid var(--border)' }}>
+          style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-10 h-10 rounded-lg flex items-center justify-center"
               style={{ backgroundColor: 'var(--bg-input)', border: '1px solid var(--border)' }}>
@@ -115,7 +114,7 @@ function About() {
 
         {/* Model Pipeline Stepper */}
         <div className="glass-panel rounded-2xl p-6 sm:p-8 mb-10 transition-all duration-300 shadow-sm"
-          style={{ backgroundColor: 'var(--bg-subtle)', border: '1px solid var(--border)' }}>
+          style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
           <h2 className="text-xl font-display font-bold mb-8 text-left" style={{ color: 'var(--text-primary)' }}>Pipeline Inference Architecture</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {pipelineSteps.map((step, idx) => (
@@ -131,7 +130,7 @@ function About() {
 
         {/* Technologies Grid */}
         <div className="glass-panel rounded-2xl p-6 sm:p-8 mb-10 transition-all duration-300 shadow-sm"
-          style={{ backgroundColor: 'var(--bg-subtle)', border: '1px solid var(--border)' }}>
+          style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
           <h2 className="text-xl font-display font-bold mb-8 text-left" style={{ color: 'var(--text-primary)' }}>Integrated Technologies</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {technologies.map((tech) => {
@@ -158,7 +157,7 @@ function About() {
 
         {/* API Specification */}
         <div className="glass-panel rounded-2xl p-6 sm:p-8 mb-10 transition-all duration-300 shadow-sm"
-          style={{ backgroundColor: 'var(--bg-subtle)', border: '1px solid var(--border)' }}>
+          style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
           <h2 className="text-xl font-display font-bold mb-6 text-left" style={{ color: 'var(--text-primary)' }}>API Endpoints (Self-Documentation)</h2>
           <div className="space-y-4">
             {apiEndpoints.map((api, idx) => (
@@ -193,7 +192,7 @@ function About() {
 
         {/* Academic Profile */}
         <div className="glass-panel rounded-2xl p-6 sm:p-8 text-center transition-all duration-300 shadow-sm"
-          style={{ backgroundColor: 'var(--bg-subtle)', border: '1px solid var(--border)' }}>
+          style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
           <div className="w-12 h-12 mx-auto rounded-xl flex items-center justify-center mb-4"
             style={{ backgroundColor: 'var(--bg-input)', border: '1px solid var(--border)' }}>
             <UserCheck className="w-6 h-6" style={{ color: 'var(--text-primary)' }} />

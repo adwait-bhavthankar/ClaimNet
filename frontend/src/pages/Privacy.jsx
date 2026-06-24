@@ -16,8 +16,7 @@ function Privacy() {
       initial="hidden"
       animate="visible"
       variants={pageVariants}
-      className="min-h-screen py-8 lg:py-12 cyber-grid relative"
-      style={{ backgroundColor: 'var(--bg-page)' }}
+      className="min-h-screen py-8 lg:py-12 relative"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -53,7 +52,7 @@ function Privacy() {
 
         {/* Content Card */}
         <div className="glass-panel rounded-2xl p-6 sm:p-8 space-y-8 transition-all duration-300 shadow-sm"
-          style={{ backgroundColor: 'var(--bg-subtle)', border: '1px solid var(--border)' }}>
+          style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)' }}>
           
           <section className="space-y-3">
             <div className="flex items-center gap-2.5">

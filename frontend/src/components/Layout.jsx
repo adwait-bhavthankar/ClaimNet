@@ -4,6 +4,7 @@ import { Shield, Menu, X, Cpu, Server, Activity, Sun, Moon } from 'lucide-react'
 import { useTheme } from '../context/ThemeContext'
 import CookieBanner from './CookieBanner'
 import ChatBot from './ChatBot'
+import Particles from './Particles'
 
 const API_URL = 'http://localhost:5000'
 
@@ -43,6 +44,9 @@ function Layout({ children }) {
 
   return (
     <div className="min-h-screen flex flex-col font-sans antialiased relative" style={{ backgroundColor: 'var(--bg-page)', color: 'var(--text-secondary)' }}>
+      {/* Background Interactive Particles */}
+      <Particles />
+
       {/* Top Telemetry Bar */}
       <div className="py-2 z-50 text-[10px] font-bold uppercase tracking-widest" style={{ backgroundColor: 'var(--bg-page-alt)', color: 'var(--text-faint)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">

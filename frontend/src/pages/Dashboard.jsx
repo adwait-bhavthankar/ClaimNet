@@ -75,7 +75,27 @@ function Dashboard() {
     { name: 'Central', value: 198, color: isDark ? '#475569' : '#cbd5e1' },
   ]
 
-  const tooltipStyle = { backgroundColor: tooltipBg, border: `1px solid ${tooltipBorder}`, borderRadius: '12px', color: isDark ? '#fff' : '#0f172a', fontSize: 12 }
+  const tooltipStyle = {
+    backgroundColor: 'var(--bg-card)',
+    border: '1px solid var(--border)',
+    borderRadius: '12px',
+    boxShadow: '0 8px 30px var(--shadow)',
+    padding: '8px 12px'
+  }
+
+  const tooltipLabelStyle = {
+    color: 'var(--text-primary)',
+    fontWeight: 'bold',
+    fontSize: '11px',
+    marginBottom: '2px',
+    textTransform: 'uppercase'
+  }
+
+  const tooltipItemStyle = {
+    color: 'var(--text-secondary)',
+    fontSize: '11.5px',
+    padding: '1px 0'
+  }
 
   return (
     <motion.div initial="hidden" animate="visible" variants={pageVariants}
@@ -141,7 +161,7 @@ function Dashboard() {
                   <CartesianGrid strokeDasharray="3 3" stroke={chartGrid} vertical={false} />
                   <XAxis dataKey="month" stroke={chartAxis} fontSize={11} tickLine={false} axisLine={false} />
                   <YAxis stroke={chartAxis} fontSize={11} tickLine={false} axisLine={false} />
-                  <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(128,128,128,0.05)' }} />
+                  <Tooltip contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle} cursor={{ fill: 'rgba(128,128,128,0.05)' }} />
                   <Bar dataKey="approved" fill={chartBar} radius={[4, 4, 0, 0]} barSize={20} />
                   <Bar dataKey="rejected" fill={chartBarAlt} stroke={chartBarStroke} strokeWidth={1} radius={[4, 4, 0, 0]} barSize={20} />
                 </BarChart>
@@ -161,7 +181,7 @@ function Dashboard() {
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart><Pie data={regionData} cx="50%" cy="50%" innerRadius={65} outerRadius={85} paddingAngle={3} dataKey="value">
                   {regionData.map((entry, i) => <Cell key={`cell-${i}`} fill={entry.color} style={{ outline: 'none' }} />)}
-                </Pie><Tooltip contentStyle={tooltipStyle} /></PieChart>
+                </Pie><Tooltip contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle} /></PieChart>
               </ResponsiveContainer>
               <div className="absolute flex flex-col items-center justify-center pointer-events-none">
                 <Database className="w-6 h-6 mb-1" style={{ color: v('text-faint') }} />
@@ -187,7 +207,7 @@ function Dashboard() {
                   <CartesianGrid strokeDasharray="3 3" stroke={chartGrid} horizontal={false} />
                   <XAxis type="number" stroke={chartAxis} fontSize={11} tickLine={false} axisLine={false} />
                   <YAxis dataKey="type" type="category" stroke={chartAxis} fontSize={11} tickLine={false} axisLine={false} width={80} />
-                  <Tooltip contentStyle={tooltipStyle} />
+                  <Tooltip contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle} />
                   <Bar dataKey="Approved" fill={chartBarH} radius={[0, 4, 4, 0]} barSize={12} />
                   <Bar dataKey="Rejected" fill={chartBarHAlt} radius={[0, 4, 4, 0]} barSize={12} />
                 </BarChart>

@@ -8,7 +8,7 @@ import {
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts'
 import { useTheme } from '../context/ThemeContext'
 
-const API_URL = 'http://localhost:5000'
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000'
 
 const initialFormData = {
   age: '', gender: '', marital_status: '', income: '', education_level: '',

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
 const Particles = React.memo(() => {
-  const colors = ['bg-purple-500', 'bg-indigo-500', 'bg-blue-500', 'bg-violet-600'];
+  const colors = ['bg-white', 'bg-slate-300', 'bg-slate-400', 'bg-slate-500'];
   
   // Generate particles once on mount using useMemo
   const particles = useMemo(() => {
@@ -27,7 +27,7 @@ const Particles = React.memo(() => {
             top: p.top,
             width: `${p.size}px`,
             height: `${p.size}px`,
-            opacity: 0.12,
+            opacity: 0.08,
             filter: 'blur(1px)',
             animation: `float ${p.duration}s ease-in-out ${p.delay}s infinite`,
           }}
